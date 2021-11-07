@@ -46,16 +46,41 @@
 </head>
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
+    <div class="container justify-content-between">
       <a href="#" class="navbar-brand waves-effect">
         <strong>MacOutlet</strong>
       </a>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">
+            <span class="badge red z-depth-1 mr-1">10</span>
+            <i class="fa fa-shopping-cart"></i>
+            <span class="clearfix d-none d-sm-inline-block">Cart</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">
+            <i class="fa fa-telegram"></i>
+          </a>
+        </li>
+      </ul>
       <button class="navbar-toggler" type="button"
       data-toggle="collapse" data-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
+      
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a href="#" class="nav-link waves-effect">Home</a>
@@ -73,34 +98,121 @@
             <a href="#" class="nav-link waves-effect">Contacts</a>
           </li>
         </ul>
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1">10</span>
-              <i class="fa fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block">Cart</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">
-              <i class="fa fa-telegram"></i>
-            </a>
-          </li>
-        </ul>
+        
       </div>
     </div>
 
   </nav>
+  <div id="carousel-ex" class="carousel slide carousel-fade pt-4 " data-ride="carousel" >
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+      <li  data-target="#carousel-ex" data-slide-to="1"></li>
+      <li  data-target="#carousel-ex" data-slide-to="2"></li>
+      <li  data-target="#carousel-ex" data-slide-to="3"></li>
+      <li  data-target="#carousel-ex" data-slide-to="4"></li>
+      <li  data-target="#carousel-ex" data-slide-to="5"></li>
+      <li  data-target="#carousel-ex" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url(img/banners/airpods_pro_banner.png);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>AirPods Pro</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/air_pods_max_banner.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>AirPods Max</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/apple_tv_banner.png);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>Apple TV</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/ipad_air_banner.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>Ipad Air</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/iphone_12_banner.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>Iphone 12</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/mac_book_banner.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>Mac Book</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/banners/watch_banner.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1 class="mb-4">
+              <strong>Apple Watch</strong>
+            </h1>
+            <a href="#" class="btn btn-outline-white btn-lg">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <a href="#carousel-ex" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#carousel-ex" class="carousel-control-next" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
 
   
   <script src="https://kit.fontawesome.com/357873e26a.js" crossorigin="anonymous"></script>
