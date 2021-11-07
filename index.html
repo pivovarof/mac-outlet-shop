@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design for Bootstrap</title>
+  <title>MacOutlet</title> 
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/icon_store.png" type="image/x-icon"> 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -17,19 +17,93 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    html,
+    body,
+    header,
+    .carousel{
+      height: 60vh;
+    }
+    @media (max-width: 740px){    
+      html,
+    body,
+    header,
+    .carousel{
+      height: 100vh;
+    }
+  }
+    @media (min-width: 800px) and (max-width: 850px){
+      html,
+    body,
+    header,
+    .carousel{
+      height: 100vh;
+    }
+  }
+  </style>
+    
+  
 </head>
 <body>
-
-  <!-- Start your project here-->  
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-      <p class="animated fadeIn text-muted">MDB Team</p>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand waves-effect">
+        <strong>MacOutlet</strong>
+      </a>
+      <button class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link waves-effect">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">Contacts</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <span class="badge red z-depth-1 mr-1">10</span>
+              <i class="fa fa-shopping-cart"></i>
+              <span class="clearfix d-none d-sm-inline-block">Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fa fa-telegram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!-- End your project here-->
 
+  </nav>
+
+  
+  <script src="https://kit.fontawesome.com/357873e26a.js" crossorigin="anonymous"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
