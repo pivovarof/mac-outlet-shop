@@ -6,17 +6,17 @@ for (let i of items){
     let price = i.price;
 
     cards.insertAdjacentHTML("afterbegin",
-     `  <div class="col-lg-3 col-md-6 mb-4">
+     `  <div class="col-lg-6 col-md-6 mb-4">
     <div class="card">
       <div class="view owerlay" >
-        <img class="card-img-top" src="img/${img}" alt="Apple">
+        <img class="card-img-top" " src="img/${img}" alt="Apple">
         <a href="">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body text-center">                      
         <h3>
-          <strong>
+          <strong >
             <a href="" class="black-text">${name}</a>
           </strong>
         </h5>
@@ -25,7 +25,7 @@ for (let i of items){
                              
         <button type="button" class="btn btn-primary">Add to cart</button>
         <h4 class="font-weight-bold mt-3">
-          <strong>${price}$</strong>
+          <strong class="string-price">${price}$</strong>
         </h4>
       </div>
     </div>
