@@ -1,12 +1,13 @@
 const cards = document.getElementById('cards');
-for (let i of items){
+function addCards() {
+  for (let i of items){
     let img = i.imgUrl;
     let name = i.name;
     let inStock = i.orderInfo.inStock;
     let price = i.price;
 
     cards.insertAdjacentHTML("afterbegin",
-     `  <div class="col-lg-6 col-md-6 mb-4">
+     `  <div class="col-lg-6 col-md-6 mb-4 cards-lok">
     <div class="card">
       <div class="view owerlay" >
         <img class="card-img-top" " src="img/${img}" alt="Apple">
@@ -35,3 +36,5 @@ for (let i of items){
 
     
 }
+}
+addCards();
