@@ -17,13 +17,14 @@ function clickFiltr(){
 
     let arrPrices = Array.from(prices)
     arrPrices.forEach(item => {
-        item.textContent = item.textContent.replace('$','');
-        price = Number(item.textContent)
+        // item.textContent = item.textContent.replace('$','');
+        price = Number((item.textContent).replace('$',''));
         
-        if ( !(price >= from && price <= to)){  
+        if ( !(price  >= from && price <= to)){  
 
             item.closest('.cards-lok').classList.add('hide');
             item.closest('.cards-lok').remove();
+            // item.textContent = `${String(price)} $`;
             
         }
     })
@@ -32,6 +33,6 @@ function clickFiltr(){
     
       
 
-// }
+
   
 }
