@@ -21,8 +21,8 @@ function addCards() {
             <a href="" class="black-text">${name}</a>
           </strong>
         </h5>
-        <span class="grey-text fw-bold fs-2"><i class="far fa-check-circle text-success"></i>
-          <span class="fw-bold fs-2"> ${inStock}</span> left in stock</span>
+        <span class="grey-text fw-bold"><i class="far fa-check-circle text-success"></i>
+          <span class="fw-bold "> ${inStock}</span> left in stock</span>
                              
         <button type="button" class="btn btn-primary">Add to cart</button>
         <h4 class="font-weight-bold mt-3">
