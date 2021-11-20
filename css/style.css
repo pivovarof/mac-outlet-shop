@@ -3,6 +3,9 @@ body,
 .view{
     height: 100%;
 }
+body.lock{
+    overflow: hidden;
+}
 
 .carousel{
     height: 50%;
@@ -34,6 +37,46 @@ body,
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup.open{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+}
+.popup_content{
+    max-width: 800px;
+}
+.reviews_block{
+    background-color: #aeb0b3;
+    font-size: 14px;
+    max-width: 300px;
+    max-height: 80px;
+    text-align: start;
+    border-radius: 10px;
+    margin: 0;
+
+}
+
+.main_options{
+    border: gray;
+}
+
+
+
+.fa-heart{
+    color: rgba(240, 84, 84, 1);
 }
 
 

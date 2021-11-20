@@ -7,11 +7,11 @@ function addCards() {
     let price = i.price;
 
     cards.insertAdjacentHTML("afterbegin",
-     `  <div class="col-lg-6 col-md-6 mb-4 cards-lok">
+     `  <div class="col-lg-6 col-md-6 mb-4 cards-lok popup-link">
     <div class="card">
       <div class="view owerlay" >
-        <img class="card-img-top" " src="img/${img}" alt="Apple">
-        <a href="">
+        <img class="card-img-top" src="img/${img}" alt="Apple">
+        <a href="#">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
@@ -20,9 +20,9 @@ function addCards() {
           <strong >
             <a href="" class="black-text">${name}</a>
           </strong>
-        </h5>
-        <span class="grey-text fw-bold"><i class="far fa-check-circle text-success"></i>
-          <span class="fw-bold "> ${inStock}</span> left in stock</span>
+        </h3>
+        <p class="grey-text fw-bold"><i class="far fa-check-circle text-success"></i>
+          <span class="fw-bold "> ${inStock}</span> left in stock</p>
                              
         <button type="button" class="btn btn-primary">Add to cart</button>
         <h4 class="font-weight-bold mt-3">
