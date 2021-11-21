@@ -37,9 +37,20 @@ popupLinks.forEach( elem => {
     
 })
 
+// const popupContent = document.getElementsByClassName('popup_content');
+// window.onclick = function(event){
+//     console.log(event);
+//     if (!event.target.closest('.popup_content')){
+//         popup[0].classList.remove('open')
+//     }
+    
+// }
 popup.forEach( elem => {
-    elem.addEventListener('click', function close(){
+    
+    elem.addEventListener('click', function(){
+        
         popup[0].classList.remove('open')
+       
     });
     
 })
