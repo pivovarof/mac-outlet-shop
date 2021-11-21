@@ -1,4 +1,5 @@
 const cards = document.getElementById('cards');
+
 function addCards() {
   for (let i of items){
     let img = i.imgUrl;
@@ -18,7 +19,7 @@ function addCards() {
            <strong class="name_card">${name}</strong>       
            
          </h3>
-         <p class="grey-text fw-bold"><i class="far fa-check-circle text-success"></i>
+         <p class="grey-text fw-bold"><i class="icon_card far fa-check-circle text-success"></i>
            <span class="fw-bold "> ${inStock}</span> left in stock</p>
                               
          <button type="button" class="btn btn-primary">Add to cart</button>
@@ -28,8 +29,19 @@ function addCards() {
        </div>
      </div>
    </div>` )
+   
+   const icon = document.getElementsByClassName('icon_card');
+   
     
+     if( inStock == 0){
 
+       icon[0].className = 'icon_card far far fa-times-circle text-danger'
+     }
+     else{
+      icon[0].className = 'icon_card far fa-check-circle text-success'
+     }
+   
+   
 
     
 }
