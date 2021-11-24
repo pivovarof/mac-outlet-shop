@@ -98,6 +98,17 @@ function filterFunction (arr) {
          </div>
        </div>
      </div>` )
+
+     const icon = document.getElementsByClassName('icon_card');
+   
+    
+     if( inStock == 0){
+
+       icon[0].className = 'icon_card far far fa-times-circle text-danger'
+     }
+     else{
+      icon[0].className = 'icon_card far fa-check-circle text-success'
+     }
         }
 
     }) 
