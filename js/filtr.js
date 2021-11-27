@@ -10,22 +10,20 @@ function clickFiltr(){
     let from = Number (document.querySelector('.input-from').value);
     let to = Number (document.querySelector('.input-to').value);
            
-    let prices = document.getElementsByClassName('string-price');
-    // let blockHide = document.querySelectorAll('.string-price')
-    
+    let prices = document.getElementsByClassName('string-price');     
 
     let price;
 
     let arrPrices = Array.from(prices)
     arrPrices.forEach(item => {
-        // item.textContent = item.textContent.replace('$','');
+ 
         price = Number((item.textContent).replace('$',''));
         
         if ( !(price  >= from && price <= to)){  
 
             item.closest('.cards-lok').classList.add('hide');
             item.closest('.cards-lok').remove();
-            // item.textContent = `${String(price)} $`;
+          
             
            
         }
