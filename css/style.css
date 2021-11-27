@@ -20,6 +20,10 @@ body.lock{
     height: 100%;
 }
 
+.card-close{
+    display: none;
+}
+
 .page-footer{
     background-color: #929FBA;
 }
