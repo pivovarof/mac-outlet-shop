@@ -8,8 +8,9 @@ let green = document.querySelector('.order[value="green"]')
 let white = document.querySelector('.order[value="white"]')
 let grey = document.querySelector('.order[value="grey"]')
 let yellow = document.querySelector('.order[value="yellow"]')
+let allColor = document.querySelectorAll('.order')
 
-
+console.log(allColor);
 let filter =[];
 addCards()
 
@@ -72,11 +73,22 @@ function filterFunction(){
           let a = el.color.find(elem => elem == 'Red')
 
           if ( a === undefined){
-            filter.push(el.id)
+          let b = filter.find(elem => elem == el.id)
+
+            if(b !== el.id){
+
+              filter.push(el.id)
+              
+
+            }
+            else{
+
+            }
+            
           }                                   
                 
         })
-        
+        console.log('1 -' + filter);
         deleteClass() 
     }
     if(this.value == 'red' && !red.checked){
@@ -85,14 +97,50 @@ function filterFunction(){
       addCards()
 
     }
+
+    if (this.value == 'black' && black.checked){
+      items.forEach(el => {
+        
+        if ( el.color.find(elem => elem == 'Black') === undefined){
+        
+
+          if(filter.find(elem => elem == el.id) !== el.id){
+
+            filter.push(el.id)
+            
+          }
+          else{
+            
+          }
+          
+        }                                   
+              
+      })
+      console.log('2 - ' + filter);
+      deleteClass() 
+  }
+  if(this.value == 'black' && !black.checked){
+
+    filter.length = 0;
+    addCards()
+
+  }
         
     }
     
 function deleteClass(){
-  filter.forEach(elem => {
-    console.log(elem);
-    document.getElementById(elem).remove();
-  })
+
+  if(filter.length == 0){
+    addCards()
+  }
+  else{
+
+    filter.forEach(elem => {
+    
+      document.getElementById(elem).remove();
+    })
+  }
+  
 
 }
     
